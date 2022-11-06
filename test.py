@@ -1,5 +1,4 @@
 from random import random
-from tkinter import Scrollbar
 from sklearn.metrics import top_k_accuracy_score
 import torch
 import torch.nn.functional as F
@@ -9,20 +8,17 @@ import time
 import random
 import numpy as np
 from tqdm import tqdm
-from torch.utils.data import random_split, Subset, ConcatDataset
+from torch.utils.data import Subset
 import pdb
 import sys
 #import swats
-from torch_scatter import scatter
 import src.hyperdataset as hdatasets
-import torch_optimizer as optim
 import src.hypermodel as hmodels
 from src.logger import Logger
 from torch_geometric.loader import DataLoader
-from src.util import InversePairs, kendall,mykendall, normalization, rank, top_k_match
-from torch.utils.tensorboard import writer
+from src.util import InversePairs, kendall, mykendall
+#from torch.utils.tensorboard import writer
 import matplotlib.pyplot as plt 
-#from src.meta import META
 parser = argparse.ArgumentParser()
 
 parser.add_argument('--seed', type=int, default=777, help='seed')
@@ -136,8 +132,8 @@ set_seed(args.seed)
 dataset, loader = build_test_loader()
 model = build_model()
 
-os.makedirs('log/{}'.format(args.checkp), exist_ok=True)
-logger = writer.SummaryWriter('log/{}'.format(args.checkp))
+# os.makedirs('log/{}'.format(args.checkp), exist_ok=True)
+# logger = writer.SummaryWriter('log/{}'.format(args.checkp))
 
 checkp = torch.load(args.checkp, map_location='cuda')
 model.load_state_dict(checkp['model'])

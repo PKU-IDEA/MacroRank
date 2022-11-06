@@ -2,6 +2,11 @@
 
 ## Download Data and Model
 [Data&Model](https://drive.google.com/drive/folders/1TKHLMwHAMXxGo2zsbVSbO51Qv1Hikc8O?usp=sharing)
+
+## Requirements
+```
+conda env create -f env.yaml 
+```
 ## Test
 ```
 bash bin/test_cnn.sh
