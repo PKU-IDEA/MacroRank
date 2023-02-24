@@ -3,9 +3,7 @@
 ## Overview
 Official implementation of our [MacroRank](https://dl.acm.org/doi/abs/10.1145/3566097.3567899), which can accurately predict the relative order of the quality of macro placement solutions.
 
-<p align="center">
-  <img src="figs/fig.png" height=300>
-</p>
+![](figs/fig.png)
 
 ## Download Data and Model
 [Data&Model](https://drive.google.com/drive/folders/1TKHLMwHAMXxGo2zsbVSbO51Qv1Hikc8O?usp=sharing)
