@@ -31,6 +31,7 @@ If you think our work is useful, please feel free to cite our [paper](https://dl
 @inproceedings{chen2023macrorank,
     author = {Chen, Yifan and Mai, Jing and Gao, Xiaohan and Zhang, Muhan and Lin, Yibo},
     title = {MacroRank: Ranking Macro Placement Solutions Leveraging Translation Equivariancy},
+    booktitle = {IEEE/ACM Asia and South Pacific Design Automation Conference (ASPDAC)},
     year = {2023},
     isbn = {9781450397834},
     publisher = {Association for Computing Machinery},
@@ -40,7 +41,6 @@ If you think our work is useful, please feel free to cite our [paper](https://dl
     pages = {258–263},
     numpages = {6},
     location = {Tokyo, Japan},
-    series = {ASPDAC '23}
 }
 ```
 
